@@ -1,0 +1,344 @@
+*{
+   font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+.cc-app {
+  min-height: 100vh;
+    background: linear-gradient(135deg, #f0f0eb, #dbf2ff);
+  padding: 24px;
+  color: #e35f0d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+/* Header */
+.cc-header {
+  background: linear-gradient(90deg, #c8ab93, rgba(141, 91, 21, 0.6));
+  padding: 18px 28px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(74, 58, 74, 0.08);
+  margin-bottom: 18px;
+}
+.cc-title {
+  margin: 0;
+  font-size: 1.6rem;
+  color: #e8e883;
+}
+
+/* Main */
+.cc-main {
+  width: 100%;
+  max-width: 980px;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 18px;
+  align-items: start;
+}
+
+/* Form */
+.cc-form {
+  background: linear-gradient(180deg, #e6fff2, #fff);
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(74, 58, 74, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.cc-input,
+.cc-file {
+  border: none;
+  padding: 10px 12px;
+  border-radius: 8px;
+  box-shadow: inset 0 1px 0 rgba(0, 0, 0, 0.03);
+  font-size: 0.95rem;
+}
+.cc-file {
+  background: transparent;
+  padding: 6px;
+}
+
+/* Buttons */
+.cc-btn {
+  padding: 10px 12px;
+  border-radius: 12px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 6px 18px rgba(74, 58, 74, 0.08);
+  transition: 0.2s;
+}
+.cc-primary {
+ background: linear-gradient(90deg, #baff85ff, #76ff37ff);
+  color: green;
+}
+.cc-delete {
+  background: transparent;
+  color: #914d6b;
+  border: 1px solid rgba(145, 77, 107, 0.12);
+}
+
+/* List & cards */
+.cc-list {
+  background: rgba(255, 255, 255, 0.6);
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(74, 58, 74, 0.08);
+}
+.cc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 12px;
+}
+.cc-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 18px rgba(74, 58, 74, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+.cc-card-img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  background: linear-gradient(90deg, #692644, #d6f0ff);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+.cc-placeholder {
+  font-size: 2.2rem;
+  padding: 8px;
+}
+.cc-card-body {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.cc-card-title {
+  margin: 0;
+  font-size: 1rem;
+  color: #6b3d6b;
+}
+.cc-card-flavor {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #8a587a;
+}
+.cc-card-price {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #3f2b3f;
+}
+
+/* Actions (merged & cleaned) */
+.cc-card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 8px;
+}
+.cc-edit,
+.cc-delete {
+  background: #ffbde7;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+.cc-edit:hover {
+  background: #a3a335;
+}
+.cc-delete:hover {
+  background: #ffc5d9;
+}
+
+/* Edit modal */
+.cc-edit-modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 240, 250, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+  z-index: 1000;
+}
+.cc-edit-box {
+  background: white;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+}
+
+/* Misc */
+.cc-empty {
+  padding: 12px;
+  color: #6b4b6b;
+}
+.cc-status {
+  font-size: 0.9rem;
+  color: #664a66;
+  margin: 6px 0 0;
+}
+.cc-footer {
+  margin-top: 18px;
+  color: #6b486b;
+}
+
+/* Responsive */
+@media (max-width: 760px) {
+  .cc-main {
+    grid-template-columns: 1fr;
+  }
+  .cc-card-img {
+    height: 140px;
+  }
+}
+
+
+
+.auth-box, .admin-container {
+  background: linear-gradient(135deg, #ffebf9, #ffe3ec);
+  padding: 2rem;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(255, 120, 150, 0.3);
+  width: 350px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.auth-box h2, .admin-container h1 {
+  color: #ec6732;
+  margin-bottom: 1rem;
+}
+
+.auth-box input {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #97484f;
+  border-radius: 10px;
+  outline: none;
+}
+
+.auth-box button {
+  background: #de9242;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.auth-box button:hover {
+  background: #946319;
+}
+
+.auth-box a:hover {
+  text-decoration: underline;
+  color: #ad692a;
+}
+
+
+.admin-container {
+  background: linear-gradient(135deg, #b86658, #ffb6d5);
+  min-height: 100vh;
+  padding: 30px;
+  color: #4d2336;
+  font-family: "Poppins", sans-serif;
+}
+
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logout-btn {
+  background: linear-gradient(90deg, #632a0e, #c2653d);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.logout-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 110, 160, 0.3);
+}
+
+
+
+/* src/styles/adminLogin.css */
+.admin-login {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px 25px;
+  background: #efa46f;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(255, 150, 180, 0.25);
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  color: #52293a;
+}
+
+.admin-login h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.admin-login input {
+  width:80%;
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 12px;
+  border: 1px solid #c5aa5f;
+  outline: none;
+  font-size: 16px;
+  transition: all 0.25s ease;
+}
+
+.admin-login input:focus {
+  border-color: #ff9a5f;
+  box-shadow: 0 4px 12px rgba(255, 120, 160, 0.2);
+}
+
+.admin-login button {
+  width: 85%;
+  padding: 12px 0;
+  border: none;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #e0ab79, #de8c5a);
+  color: white;
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 6px 14px rgba(255, 120, 150, 0.25);
+  transition: all 0.3s ease;
+}
+
+.admin-login button:hover {
+  background: #9d7c54;
+  box-shadow: 0 8px 18px rgba(255, 100, 150, 0.3);
+}
+
+.admin-login p {
+  margin-bottom: 15px;
+  font-size: 14px;
+}

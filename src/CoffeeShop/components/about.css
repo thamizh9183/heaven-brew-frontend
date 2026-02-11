@@ -1,0 +1,131 @@
+/* General Page Style */
+
+.about-page {
+  font-family: 'Poppins', sans-serif;
+  color: oklab(69.756% 0.12896 0.1243 / 0.45);
+  min-height: 100vh;
+    background: linear-gradient(135deg, #af997b, #d6f0ff);
+  overflow-x: hidden;
+}
+
+/* Header */
+.about-header {
+  text-align: center;
+  padding: 80px 20px 60px;
+  background: linear-gradient(90deg, #5e3c03, #e2b65f);
+  border-bottom-left-radius: 50% 12%;
+  border-bottom-right-radius: 50% 12%;
+  box-shadow: 0 6px 20px rgba(170, 154, 159, 0.25);
+}
+
+.about-header h1 {
+  font-size: 3rem;
+  color: #71351b;
+  margin-bottom: 10px;
+}
+
+.about-tagline {
+  color: #db9958;
+  font-style: italic;
+  font-size: 1.2rem;
+}
+
+/* Story Section */
+.about-story {
+  display: flex;
+  justify-content: center;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.story-text {
+  max-width: 800px;
+  background: rgba(250, 206, 124, 0.895);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 25px rgba(255, 150, 180, 0.25);
+  backdrop-filter: blur(10px);
+}
+
+.story-text h2 {
+  color: #abad43e7;
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.story-text p {
+  line-height: 1.7;
+  color: #e27b32;
+  font-size: 1.1rem;
+}
+
+/* Parallax Image Sections */
+.parallax {
+  height: 60vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(0.95);
+  border-radius: 12px;
+  margin: 40px 0;
+  box-shadow: 0 8px 30px rgba(255, 150, 180, 0.25);
+}
+
+
+.img1 {
+  background-image: url('/CoffeeImages/hearten beans.jpg');
+}
+
+.img2 {
+  background-image: url('/CoffeeImages/macchiatos coffee.jpg');
+}
+
+.img3 {
+  background-image: url('/CoffeeImages/iced coffee.jpg');
+}
+
+.img4 {
+  background-image: url('/CoffeeImages/raspberry iced coffee.jpg');
+}
+
+.img5 {
+  background-image: url('/CoffeeImages/white cup with hot coffee.jpg');
+}
+
+.img6 {
+  background-image: url('/CoffeeImages/latte macchiato coffee.jpg');
+}
+
+/* Promise Section */
+.about-promise {
+  text-align: center;
+  padding: 80px 20px;
+  background: linear-gradient(180deg, #8f8853, #ffe9f1);
+  border-radius: 40px 40px 0 0;
+}
+
+.about-promise h2 {
+  color: #583905;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about-promise p {
+  color: #5a2f45;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Footer */
+.about-footer {
+  text-align: center;
+  padding: 25px 10px;
+  background: linear-gradient(90deg, #ffd9ec, #fff4f9);
+  color: #944667;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -4px 15px rgba(255, 150, 180, 0.2);
+}
