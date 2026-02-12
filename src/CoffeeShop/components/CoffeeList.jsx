@@ -53,7 +53,7 @@ export default function CoffeeList({ adminView = false, token, onAddToCart }) {
             {item.image ? (
               <img
                 className="cc-card-img"
-                src={item.image.startsWith("http") ? item.image : `http://localhost:5000/uploads/${item.image}`}
+                src={item.image.startsWith("https") ? item.image : `https://brew-heaven-cafe-backend-tk0o.onrender.com/uploads/${item.image}`}
                 alt={item.name}
               />
             ) : (
