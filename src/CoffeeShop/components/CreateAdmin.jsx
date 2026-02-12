@@ -5,7 +5,7 @@ export default function CreateAdmin() {
   const [msg, setMsg] = useState("");
 
   const handleCreate = async () => {
-    const res = await fetch("http://localhost:5000/api/auth/signup", {
+    const res = await fetch("https://brew-heaven-cafe-backend-tk0o.onrender.com/api/auth/signup", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
