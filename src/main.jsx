@@ -11,4 +11,5 @@ createRoot(document.getElementById('root')).render(
   </CartProvider>
   </StrictMode>,
 )
-// redeploy fix comment
+// redeploy fix comment    
+// Trigger full Vercel rebuild
